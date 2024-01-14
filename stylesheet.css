@@ -11,14 +11,13 @@ body{
 /* moon class centers moon image on page and connects to 
 transform animation "rollMoon" below. */
 .moon {
-    background-image: url(./images/moon.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 50%; 
-    height: 50%; 
-    position: fixed;
-    bottom: 0; 
-    left: 50%; 
+    background-size:auto;
+    width: 5%; 
+    height: 35%; 
+    position:fixed;
+    bottom: 50%; 
+    left: 0%; 
     transform: translateX(-50%); 
     z-index: 1; 
     animation: rollMoon 3s linear forwards; 
@@ -294,6 +293,15 @@ svg text {
     
 }
 
+@media only screen and (max-width: 1000px) {
+    #animatedText {
+        text-align: center;
+        left:50% !important;
+        bottom: 70%;
+        font-size: 20px;  /* Adjust font size for smaller screens */
+    }
+}
+
 #animatedText {
     stroke-width: 1;
     opacity: 0;
@@ -334,6 +342,12 @@ svg text {
     opacity: 0; /* Set initial opacity to 0 */
     animation: fadeIn 2.5s ease-in-out forwards; 
     animation-delay: 6s;
+}
+
+@media only screen and (max-width: 1000px) {
+    #paragraph{
+        font-size: 10px;  /* Adjust font size for smaller screens */
+    }
 }
 
 @keyframes fadeIn {
@@ -449,4 +463,5 @@ svg text {
         transform: rotate(+0.005turn);
     }
 }
+
 
