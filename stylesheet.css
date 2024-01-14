@@ -15,13 +15,21 @@ transform animation "rollMoon" below. */
     background-size: contain;
     width: 5%; 
     height: 35%; 
-    position:fixed;
+    position: fixed;
     bottom: 50%; 
     left: 0%; 
     transform: translateX(-50%); 
     z-index: 1; 
     animation: rollMoon 3s linear forwards; 
     animation-delay: 2.5s;
+}
+@media only screen and (max-width: 1000px) {
+    #moon{
+        width: 2%; 
+        height: 20%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @keyframes rollMoon {
@@ -298,7 +306,7 @@ svg text {
         text-align: center;
         left:50% !important;
         bottom: 70%;
-        font-size: 20px;  /* Adjust font size for smaller screens */
+        font-size: 15px;  /* Adjust font size for smaller screens */
     }
 }
 
