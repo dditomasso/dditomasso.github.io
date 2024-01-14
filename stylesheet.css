@@ -12,7 +12,7 @@ body{
 transform animation "rollMoon" below. */
 .moon {
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size: contain;
     width: 5%; 
     height: 35%; 
     position:fixed;
