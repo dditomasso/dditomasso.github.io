@@ -8,3 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("paragraph").classList.add("visible");
     }, 6000);
 });
+
+document.getElementById('reloadButton').addEventListener('click', function() {
+    location.reload(); 
+});
